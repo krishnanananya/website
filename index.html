@@ -4,26 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navigation Dots -->
+  <div class="nav-dots">
+    <a href="#section1" class="dot active"></a>
+    <a href="#section2" class="dot"></a>
+    <a href="#section3" class="dot"></a>
+  </div>
+
   <!-- Hero Section -->
-  <header>
-    <div class="hero">
+  <section id="section1" class="panel">
+    <div class="hero-content">
       <h1>Your Name</h1>
       <p>Your Profession or Tagline</p>
-      <a href="#about" class="scroll-btn">Learn More</a>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="section2" class="panel">
     <h2>About Me</h2>
     <p>A brief introduction about yourself.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="section3" class="panel">
     <h2>Projects</h2>
     <div class="project">
       <h3>Project Title 1</h3>
@@ -35,7 +42,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Footer -->
   <footer>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
@@ -43,6 +50,9 @@
     <p>GitHub: <a href="https://github.com/yourusername">Your GitHub</a></p>
   </footer>
 
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
